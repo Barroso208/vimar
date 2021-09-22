@@ -1,4 +1,4 @@
-let imagenes= ["imagenes/watermark-designs-XL6gfkLmkOw-unsplash.jpg","imagenes/sidekix-media-oCw5_evbWyI-unsplash(1).jpg","imagenes/roam-in-color-z3QZ6gjGRt4-unsplash.jpg"]
+let imagenes= ["watermark-designs-XL6gfkLmkOw-unsplash.jpg","sidekix-media-oCw5_evbWyI-unsplash(1).jpg","roam-in-color-z3QZ6gjGRt4-unsplash.jpg"]
 let imgSlider = document.getElementById("imgSlider");
 var num = 1;
 
