@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagenes/Logo_Vimar_Negro_faviconsvg.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap&family=Raleway:wght@400;500&" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/estilos.css">
+    <meta name="description" content="Diseño y fabricación de cocinas, baños y reformas en general con fabrica propia.">
+    <title>Vimar Cocinas</title>
+</head>
+<body>
+<div class="body">
+    <!-- MENU DE NAVEGACIÓN CON DIFERENTES LINKS -->
+    <nav id="navbar" class="barraMenu">
+        <a href="" class="logo" aria_label="Logotipo Cocinas Vimar">
+            <img src="imagenes/Logo_Vimar_Negro.svg" alt="Logotipo de Cocinas Vimar" srcset="">
+        </a>
+        <div class="listaLinks">
+            <a href="#" class="links" onclick="desplegarLista()">Diseños</a>
+            <a href="#" class="links" onclick="desplegarLista()">Galería</a>
+            <a href="#" class="links" onclick="desplegarLista()">Fábrica</a>
+            <a href="#" class="contacto" onclick="desplegarLista()">Contacto</a>
+        </div>
+        <!-- MENU DE NAVEGACIÓN PARA EL MÓVIL FUNCIONAL POR: NAVBAR.JS -->
+        <div class="menuMobil" onclick="desplegarLista()">
+        <img class="iconoMenu" src="imagenes/menu.svg" alt="Icono del menú">
+        </div>
+    </nav>
+
+<!-- HEADER CON SLIDER FUNCIONAL POR: SLIDER.JS.JS -->
+    <header class="portada">
+        <div class="slider">
+            <button class="btnSlider botonIzquierdo"><</button>
+            <img id="imgSlider" src="imagenes/sidekix-media-oCw5_evbWyI-unsplash(1).jpg" alt="" class="imagenPortada" onclick="change()">
+            <button class="btnSlider botonDerecho">></button>
+        </div>
+    </header>    
+    
+    <!-- ESLOGAN EN GRANDE -->
+    <section class="eslogan">
+        <h2 class="esloganText">Experiencia + Calidad + Precio = Cocinas Vimar</h2>
+    </section>
+    <!-- SECCIÓN DE ENLACES CON FOTOS Y TEXTO A LAS DIFERENTES SUBPÁGINAS -->
+    <section class="linksGrid">
+        <article class="articulos">
+            <img loading = "lazy" src="imagenes/watermark-designs-XL6gfkLmkOw-unsplash.jpg" alt="" >
+            <a href="#">
+                <h6 class ="tituloArticles">Diseño de cocinas y cualquier tipo de interior</h6>
+                <p class="textoArticles">Disfrute de todos nuestros proyectos y reformas hechos hasta la fecha.</p>
+            </a>
+        </article>
+        <article class="articulos">
+            <img  loading = "lazy" src="imagenes/watermark-designs-XL6gfkLmkOw-unsplash.jpg" alt="" >
+            <a href="#">
+                <h6 class ="tituloArticles">Galería de imagenes de nuestros trabajos</h6>
+                <p class="textoArticles">¿Quiere ver una vista general de nuestro trabajo y nuestros acabados? Pinche aquí</p>
+            </a>
+        </article>
+        <article class="articulos">
+            <img loading = "lazy" src="imagenes/roam-in-color-z3QZ6gjGRt4-unsplash.jpg" alt="" >
+            <a href="#">
+                <h6 class ="tituloArticles">Contamos con Fábrica propia</h6>
+                <p class="textoArticles">Fábrica propia donde contamos con un equipo de profesionales altamente cualificados capaces de conseguir llevar tus ideas a cabo.</p>
+            </a>
+        </article>
+        <article class="articulos">
+            <img loading = "lazy" src="imagenes/roam-in-color-z3QZ6gjGRt4-unsplash.jpg" alt="" >
+            <a href="#">
+                <h6 class ="tituloArticles">Showroom</h6>
+                <p class="textoArticles">Contacte con nosotros y venga a visitar nuestro showroom.</p>
+            </a>
+        </article>
+    </section>
+    <!-- SECCIÓN DE CARACTERÍSTICAS -->
+    <div style="width:100%;height:13vh;background-color:var(--primary);"></div>
+    <section class="caracts">
+        <div class="caracteristicas">
+            <img src="" alt="">
+            <h3 class="caracteristicasTexto">Bocetos a medida directos de fábrica</h3>
+        </div>
+        <div class="caracteristicas">
+            <img src="" alt="">
+            <h3 class="caracteristicasTexto">Personalizamos los proyectos para que sean únicos</h3>
+        </div>
+        <div class="caracteristicas">
+            <img src="" alt="">
+            <h3 class="caracteristicasTexto">Los muebles y diseños de fábrica que estás buscando </h3>
+        </div>
+        <div class="caracteristicas">
+            <img src="" alt="">
+            <h3 class="caracteristicasTexto">Cocinas en Madrid, todo integrado sin intermediarios</h3>
+        </div>
+    </section>
+    <div style="width:100%;height:15vh;background-color:var(--primary);"></div>
+    <!-- PIE DE PÁGINA -->
+    <footer class="pieDePag">
+        <section class="seccion1">
+            <!-- FRASE CORTA Y ENLACES A REDES -->
+            <div class = "textoM">
+                Diseñamos a medida muebles de alta resistencia. <br> <br>
+                Contar con fabrica propia nos permite materializar los sueños de tu hogar y ofrecértelos a los precios más competitivos del mercado.
+            </div>
+            <article class = "footerLinks">
+                <a href="#" class="insta"><img class="icon" src="imagenes/instagram.png" alt="Logo instagram"></a>
+                <a href="#" class="facebook"><img class="icon"  src="imagenes/facebook-circular-logo.png" alt="Logo Facebook"></a>
+                <a href="#" class="telef"><img class="icon" src="imagenes/llamada-telefonica.png" alt="Logo teléfono"></a>
+            </article>
+        </section>
+        <!-- PARTE DE COPYRIGTH Y ACCIONES LEGALES -->
+        <section class="seccion2">
+            <article class="copyright">© 2020 MOBILIARIO Y DISEÑO DEL HOGAR TODOS LOS DERECHOS RESERVADOS VIMAR 
+                <a href="condicionesLegales.html">POLÍTICA DE PRIVACIDAD  INFORMACIÓN LEGAL</a>
+                <br> <br> <span class="spanAtribuciones" id="spanAtribuciones" onclick="display()">Atribuciones legales</span>
+                <div class="atribucionesDiv" id="atribucionesDiv">
+                    <div class="z">
+                        Iconos diseñados por <a  href="https://www.freepik.com" class="z y" >Freepik</a> from <a class="z y" href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </footer>
+</div>
+<script src="js/navbar.js"></script>
+<script src="js/slider.js"></script>
+</body>
+</html>
