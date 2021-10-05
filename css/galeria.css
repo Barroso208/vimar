@@ -1,0 +1,3 @@
+.fotos img:hover{
+    filter: brightness(50%);
+}
