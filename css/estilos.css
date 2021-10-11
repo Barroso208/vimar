@@ -323,3 +323,37 @@ body{
     /* Seccion de links y sus elementos */
     /* Pie de pagina y sus elementos */
 }
+
+
+.textoPoliticas{
+    background-color: var(--secondary);
+    padding: 5rem 0 5rem 0;
+}
+
+.textoPoliticas p, .textoPoliticas h3, .textoPoliticas h4{
+    color: var(--primary);
+    padding:0 5rem 0 5rem;
+    text-align: justify;
+}
+.textoPoliticas p {
+    font-weight: 300;
+}
+
+/* header políticas */
+
+.headerDiseno{
+    background-color: var(--primary);
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    flex-direction: column;
+    height:32vh;
+    border-bottom: solid 2px #757575;
+}
+
+.titleDiseno{
+    position: relative;
+    top:20px;
+    margin-left: 64px;
+    font: 38px 'Raleway';
+}

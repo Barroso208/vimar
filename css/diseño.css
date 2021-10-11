@@ -80,6 +80,7 @@
     /* header galería de diseño */
     .headerDiseno{
         align-items:center;
+        text-align:center;
     }
     .titleDiseno{
         margin-left: 0;
@@ -96,3 +97,5 @@
 @media (min-width: 1000px) {
     
 }
+
+
