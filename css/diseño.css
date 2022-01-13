@@ -68,6 +68,16 @@
 /* .fotos img:hover{
     filter: brightness(50%);
 } */
+.botonDiseño{
+    width:100%;
+    padding:18px;
+    background-color: transparent;
+    color:var(--primary);
+    box-shadow: none;
+    border:none;
+    text-decoration: underline;
+    font: 18px "montserrat";
+}
 
 
 

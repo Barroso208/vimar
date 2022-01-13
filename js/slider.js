@@ -1,4 +1,4 @@
-let imagenes= ["imagenes/showroom/showroomEdited.jpg","imagenes/imagenesOptimizadas/CASANOBA 3.JPG","imagenes/imagenesOptimizadas/IMG_5837.JPG","imagenes/imagenesOptimizadas/IMG_1685.JPG"]
+let imagenes= ["imagenes/showroom/showroomEdited.jpg","imagenes/imagenesOptimizadas/foto1.JPG","imagenes/imagenesOptimizadas/cocinas/IMG_5837.JPG","imagenes/imagenesOptimizadas/cocinas/IMG_1685.JPG"]
 let imgSlider = document.getElementById("imgSlider");
 var num = 1;
 
@@ -13,6 +13,10 @@ function change(){
         num++;
         break;
     case 3:
+    imgSlider.src = imagenes[3];
+        num++;
+        break;
+    case 4:
     imgSlider.src = imagenes[0];
         num = 1;
         break;

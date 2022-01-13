@@ -97,12 +97,16 @@ body{
         position:relative;
         top:10%;
     }
+
     .latido{
         animation: entradaMenu 1s;
     }
     .latidoInverso{
         animation: entradaMenu 0.3s;
         animation-direction: reverse;
+    }
+    .tituloArticles{
+        text-decoration: underline;
     }
     @keyframes entradaMenu{
         from{
