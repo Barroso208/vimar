@@ -15,5 +15,5 @@ function fotos(nombreid,carpeta,n){
         contenedorGaleria.appendChild(article);
     }
 }
-fotos(banos,"imagenesOptimizadas",7);
-fotos(cocinas,"imagenesOptimizadas",7);
+fotos(banos,"imagenesOptimizadas/baños",7);
+fotos(cocinas,"imagenesOptimizadas/cocinas",7);
