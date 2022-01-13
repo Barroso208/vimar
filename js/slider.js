@@ -1,4 +1,4 @@
-let imagenes= ["imagenes/showroom/showroomEdited.jpg","imagenes/imagenesOptimizadas/foto1.JPG","imagenes/imagenesOptimizadas/cocinas/IMG_5837.JPG","imagenes/imagenesOptimizadas/cocinas/IMG_1685.JPG"]
+let imagenes= ["imagenes/showroom/showroomEdited.jpg","imagenes/imagenesOptimizadas/foto1.JPG","imagenes/imagenesOptimizadas/Cocinas/IMG_5837.JPG","imagenes/imagenesOptimizadas/Cocinas/IMG_1685.JPG"]
 let imgSlider = document.getElementById("imgSlider");
 var num = 1;
 
