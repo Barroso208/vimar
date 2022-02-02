@@ -30,10 +30,10 @@ function fotos(tipo,nombreid,carpeta,n,s,t){
     }
 }
 function cocina(){
-    fotos("cocina",cocinas,"imagenesOptimizadas/cocinas/ordenadas",c+6,c,40);
+    fotos("cocina",cocinas,"imagenesOptimizadas/Cocinas/ordenadas",c+6,c,40);
 }
 function bano(){
-    fotos("bano",banos,"imagenesOptimizadas/baños/ordenadas",b+6,b,16);
+    fotos("bano",banos,"imagenesOptimizadas/Baños/ordenadas",b+6,b,16);
 }
-fotos("cocina",banos,"imagenesOptimizadas/baños/ordenadas",7,1,39);
-fotos("bano",cocinas,"imagenesOptimizadas/cocinas/ordenadas",7,1,16);
+fotos("cocina",banos,"imagenesOptimizadas/Baños/ordenadas",7,1,39);
+fotos("bano",cocinas,"imagenesOptimizadas/Cocinas/ordenadas",7,1,16);
