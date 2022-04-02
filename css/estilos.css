@@ -28,8 +28,8 @@ body{
 .barraMenu{
     width: 100%;
     height:15vh;
-    background-color: var(--primary);
-    position: sticky;
+    background-color:#1a1a1ab2;
+    position: fixed;
     top: 0;
     display:flex;
     align-items: center;
@@ -37,6 +37,7 @@ body{
     box-shadow: 0 5px 8px #757575;
     animation-duration:1s;
     z-index: 1;
+    max-width: 1300px;
 }
 .logo{
     height:100%;
@@ -74,7 +75,9 @@ body{
     color: white;
     cursor:pointer;
 }
+
 @media (max-width: 620px) {
+    
     .iconoMenu{
         display:block;
     }
@@ -147,7 +150,7 @@ body{
 /* Portada y sus elementos */
 .portada{
     width:100%;
-    height:85vh;
+    height:100vh;
     overflow: hidden;
 }
 .slider{
@@ -161,7 +164,17 @@ body{
 }
 .imagenPortada{
     width:100%;
+    animation: transparencia1 1s;
 }
+@keyframes transparencia1{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:100;
+    }
+}
+
 @media (max-width: 620px) {
     .portada{
         height:60vh;
@@ -209,6 +222,7 @@ body{
 }
 .articulos> img{
     width: 75%;
+    border-radius: 15px;
 }
 .articulos > a{
     width: 75%;
@@ -227,16 +241,29 @@ body{
 /* Sección de caracteristicas */
 .caracts{
     width:100%;
-    height:35vh;
     display: flex;
     align-items: center;
+    justify-content:center;
     background-color: var(--primary);
 }
 .caracteristicas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
     height:100%;
-    width:25%;
+    width:calc(100%/3);
+    padding:16px 25px;
     background-color: var(--secondary);
     border:1px solid var(--primary);
+}
+.caracteristicas>img{
+    width: 80%;
+    border-radius: 20px;
+}
+.caracteristicasTitulo{
+    font: 1.5rem 'montserrat';
+    color: var(--primary);
 }
 .caracteristicasTexto{
     font: 1rem 'raleway';
