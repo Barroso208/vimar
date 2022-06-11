@@ -4,8 +4,8 @@
 }
 
 /* header galería de diseño */
-
 .headerDiseno{
+    margin-top: 15vh;
     background-color: var(--primary);
     display:flex;
     justify-content:center;

@@ -3,6 +3,9 @@
     --secondary: #D0D0D0;
 }
 
+.containerContacto1{
+    margin-top: 15vh;
+}
 .flexible{
     display:flex;
     flex-direction:column;
@@ -87,15 +90,25 @@
 
 
 /* Para móvil */
-@media (max-width: 980px) {
+@media (max-width: 1080px) {
     /* Contenedor */
     .containerContacto{
         flex-wrap: wrap;
     }
     .bloque{
         width:100%;
+        height:50vh;
         min-width: 0px;
     }
+    .tituloBloque1{
+        font-size:20px;
+        margin-bottom:25px;
+    }
+    .redes{
+        margin: 16px;
+        font-size:16px;
+    }
+        
     /* Bloque1 */
     /* Bloque2 */
     .bloque2{

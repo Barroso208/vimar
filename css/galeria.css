@@ -1,3 +1,6 @@
 .fotos img:hover{
     filter: brightness(50%);
 }
+.headerDiseno{
+    margin-top: 15vh;
+}
