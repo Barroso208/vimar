@@ -42,7 +42,7 @@ function bano() {
     fotos("bano", banos, "imagenesOptimizadas/Baños/ordenadas", b + 6, b, 16);
 }
 function showroo() {
-    fotos("showroom", showroom, "showroom/aShowroomOrdenada", l + 6, l, 16);
+    fotos("showroom", showroom, "showroom/aShowroomOrdenadas", l + 6, l, 16);
 }
 fotos("cocina", banos, "imagenesOptimizadas/Baños/ordenadas", 7, 1, 39);
 fotos("bano", cocinas, "imagenesOptimizadas/Cocinas/ordenadas", 7, 1, 16);
