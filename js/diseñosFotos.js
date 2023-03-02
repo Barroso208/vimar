@@ -19,7 +19,9 @@ function fotos(tipo, nombreid, carpeta, n, s, t) {
             img.loading = "lazy";
             link.appendChild(img);
             article.appendChild(link);
-            contenedorGaleria.appendChild(article);
+            img.addEventListener("load", function() {
+                contenedorGaleria.appendChild(article);
+            });
         } else {
             document.getElementById("boton" + tipo).style.display = "none";
         }

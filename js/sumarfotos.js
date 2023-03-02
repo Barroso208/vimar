@@ -5,11 +5,14 @@ function fotos(n){
         const article = document.createElement("article");
         article.className = "fotos";
         const img = document.createElement("img");
-        img.src = "imagenes/imagenesOptimizadas/foto"+ i +".JPG";
+        img.src = "imagenes/imagenesOptimizadas/foto"+ i +".jpg";
         img.alt = "imagenOptimizada";
         img.loading = "lazy";
         article.appendChild(img);
-        contenedorGaleria.appendChild(article);
+        img.addEventListener("load", function() {
+            contenedorGaleria.appendChild(article);
+        });
+        
     }
 }
 
@@ -22,4 +25,5 @@ function numero(n){
 }
 
 //CAMBIA ESTE NÚMERO AL NÚMERO DE FOTOS QUE TENGA LA CARPETA
-numero(37);
+numero(47);
+
