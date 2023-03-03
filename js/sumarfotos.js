@@ -1,29 +1,42 @@
 const contenedorGaleria = document.getElementById("galeriaDiv");
 
-const imageFolder = "/imagenes/imagenesOptimizadas";
-fetch(imageFolder)
-    .then(response => response.text())
-    .then(html => {
-        // Parse the HTML to get a list of filenames
-        const parser = new DOMParser();
-        const doc = parser.parseFromString(html, "text/html");
-        const filenames = Array.from(doc.querySelectorAll("a"))
-            .map(link => link.getAttribute("href"))
-            .filter(href => href.endsWith(".jpg")||href.endsWith(".JPG")||href.endsWith(".png")||href.endsWith(".webp"));
 
-        // Load each image and display it on the page
-        filenames.forEach(filename => {
+
+
+// Set the variables for the GitHub repository and folder to fetch images from,
+// as well as the file extensions to consider as images.
+
+const owner = "Barroso208";
+const repo = "vimar";
+const branch = "main";
+const folder = "/imagenes/imagenesOptimizadas";
+const imageExtensions = ["jpg", "jpeg", "png", "gif","JPG","webp"];
+
+// Fetch the contents of the specified folder in the repository using the GitHub REST API.
+fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${folder}?ref=${branch}`)
+    .then(response => response.json())
+    .then(files => {
+        // Filter out the files that do not have one of the specified image file extensions.
+        const imageFiles = files.filter(file => {
+            const extension = file.name.split(".").pop();
+            return imageExtensions.includes(extension);
+        });
+
+        // Create a div element to contain the images and append it to the body of the page.
+
+        // Create an HTML img element for each image file and append it to the images div.
+        imageFiles.forEach(file => {
+
             const article = document.createElement("article");
             article.className = "fotos";
             const img = document.createElement("img");
-            img.src = filename;
+            img.src = file.download_url;
             img.alt = "imagenOptimizada";
             img.loading = "lazy";
             article.appendChild(img);
             img.addEventListener("load", function () {
-            contenedorGaleria.appendChild(article);
+                contenedorGaleria.appendChild(article);
             });
         });
-    });
-
-    
+    })
+    .catch(error => console.error(error));
