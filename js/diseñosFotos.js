@@ -1,6 +1,6 @@
 // Set the usernames and repository names for each gallery
 const galleries = [
-    { username: "Barroso208", repo: "vimar", path: "imagenes/imagenesOptimizadas/Banos" },
+    { username: "Barroso208", repo: "vimar", path: "imagenes/imagenesOptimizadas/Baños" },
     { username: "Barroso208", repo: "vimar", path: "imagenes/imagenesOptimizadas/Cocinas" },
     { username: "Barroso208", repo: "vimar", path: "imagenes/showroomResized" }
 ];
