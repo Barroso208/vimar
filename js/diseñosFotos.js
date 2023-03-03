@@ -64,9 +64,6 @@ Promise.all(
             document.getElementById("botonshowroom").style.display = "none";
         }
     });
-    
-    
-
 });
 
 
