@@ -3,7 +3,7 @@ var num = 1;
 
 function change() {
     imgSlider.style.opacity = 0;
-    imgSlider.src = "imagenes/imagenesOptimizadas/imagenesPortada" + imagenesSlider[num];
+    imgSlider.src = "imagenes/imagenesOptimizadas/imagenesPortada/" + imagenesSlider[num];
     opac();
     if(num == imagenesSlider.length-1){
         num = 0;
