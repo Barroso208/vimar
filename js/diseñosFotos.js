@@ -1,8 +1,8 @@
 // Set the usernames and repository names for each gallery
 const galleries = [
-    { username: "Barroso208", repo: "vimar", path: "imagenes/imagenesOptimizadas/Baños" },
+    { username: "Barroso208", repo: "vimar", path: "imagenes/imagenesOptimizadas/Banos" },
     { username: "Barroso208", repo: "vimar", path: "imagenes/imagenesOptimizadas/Cocinas" },
-    { username: "Barroso208", repo: "vimar", path: "imagenes/showroomResized" }
+    { username: "Barroso208", repo: "vimar", path: "imagenes/imagenesOptimizadas/showroom" }
 ];
 
 // Get a list of all the files in each repository
@@ -76,6 +76,3 @@ function displayImages(urls, place) {
         place.appendChild(article);
     });
 }
-
-
-

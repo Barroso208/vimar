@@ -9,7 +9,7 @@ const contenedorGaleria = document.getElementById("galeriaDiv");
 const owner = "Barroso208";
 const repo = "vimar";
 const branch = "main";
-const folder = "/imagenes/imagenesOptimizadas";
+const folder = "/imagenes/imagenesOptimizadas/imagenesGaleria";
 const imageExtensions = ["jpg", "jpeg", "png", "gif","JPG","webp"];
 
 // Fetch the contents of the specified folder in the repository using the GitHub REST API.
@@ -26,7 +26,6 @@ fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${folder}?ref=${br
 
         // Create an HTML img element for each image file and append it to the images div.
         imageFiles.forEach(file => {
-
             const article = document.createElement("article");
             article.className = "fotos";
             const img = document.createElement("img");
