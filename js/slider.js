@@ -6,7 +6,7 @@ function change() {
     imgSlider.src = "imagenes/imagenesOptimizadas/" + imagenesSlider[num];
     opac();
     if(num == imagenesSlider.length-1){
-        num == 0;
+        num = 0;
     }else{
         num++;
     }
