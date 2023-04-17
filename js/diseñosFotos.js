@@ -59,7 +59,7 @@ Promise.all(
     });
     
     //PARA LAS FOTOS DE LA Armario
-    displayImages(urlsArray[1].slice(0, 6), armarios);
+    displayImages(urlsArray[3].slice(0, 6), armarios);
 
     document.getElementById("botonarmarios").addEventListener("click", () => {
         // Load and display the next 6 images
