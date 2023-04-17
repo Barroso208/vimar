@@ -2,7 +2,8 @@
 const galleries = [
     { username: "Barroso208", repo: "vimar", path: "imagenes/imagenesOptimizadas/Banos" },
     { username: "Barroso208", repo: "vimar", path: "imagenes/imagenesOptimizadas/Cocinas" },
-    { username: "Barroso208", repo: "vimar", path: "imagenes/imagenesOptimizadas/showroom" }
+    { username: "Barroso208", repo: "vimar", path: "imagenes/imagenesOptimizadas/showroom" },
+    { username: "Barroso208", repo: "vimar", path: "imagenes/imagenesOptimizadas/Armarios" }
 ];
 
 // Get a list of all the files in each repository
@@ -54,6 +55,20 @@ Promise.all(
         //Check si se ha llegado al maximo de fotos y display none boton
         if (showroom.querySelectorAll("img").length == urlsArray[2].length) {
             document.getElementById("botonshowroom").style.display = "none";
+        }
+    });
+    
+    //PARA LAS FOTOS DE LA Armario
+    displayImages(urlsArray[1].slice(0, 6), armarios);
+
+    document.getElementById("botonarmarios").addEventListener("click", () => {
+        // Load and display the next 6 images
+        const startIndex = armarios.querySelectorAll("img").length;
+        const endIndex = startIndex + 6;
+        displayImages(urlsArray[1].slice(startIndex, endIndex), armarios);
+        //Check si se ha llegado al maximo de fotos y display none boton
+        if (armarios.querySelectorAll("img").length == urlsArray[1].length) {
+            document.getElementById("botonarmarios").style.display = "none";
         }
     });
 
